@@ -1,11 +1,6 @@
 def players_by_country_and_position(squads_list):
   players_by_country = {}
-  players_by_position = {
-        "GK" : [],
-        "DF" : [],
-        "MF" : [],
-        "FW" : []
-        }
+  players_by_position = {}
 
   for squads in squads_list:
     my_dict = {'number': squads[0],

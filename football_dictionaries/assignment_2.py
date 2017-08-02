@@ -1,10 +1,5 @@
-def players_as_dictionaries(squads_list):
-  players_by_position = {
-    "GK" : [],
-    "DF" : [],
-    "MF" : [],
-    "FW" : []
-  }
+def players_by_position(squads_list):
+  players_by_position = {}
 
   for squads in squads_list:
     my_dict = {'number': squads[0],
@@ -20,7 +15,7 @@ def players_as_dictionaries(squads_list):
 
     player_position = my_dict["position"]
     if player_position not in players_by_position:
-        players_by_position[player_position] = players_by_position
+        players_by_position[player_position] = []
     players_by_position[player_position].append(my_dict)
 
   return players_by_position
