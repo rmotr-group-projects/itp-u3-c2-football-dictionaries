@@ -107,7 +107,7 @@ def test_assignment_3():
     assert len(result) == 4
 
     expected_countries = ['Argentina', 'Belgium', 'Brazil', 'South Korea']
-    assert list(result.keys()) == expected_countries
+    assert list(sorted(result.keys())) == expected_countries
 
     # Argentina
     argentina = result['Argentina']
