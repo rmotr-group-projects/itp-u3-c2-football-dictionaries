@@ -23,13 +23,8 @@ def players_by_position(squads_list):
         "club_country": each_list[6], 
         "year": each_list[8]}
         
-        if new_dict["position"] == "GK":
-            dict_position["GK"].append(new_dict)
-        elif new_dict["position"] == "DF":
-            dict_position["DF"].append(new_dict)
-        elif new_dict["position"] == "MF":
-            dict_position["MF"].append(new_dict)
-        elif new_dict["position"] == "FW":
-            dict_position["FW"].append(new_dict)
-    
+        for each_key in dict_position:
+            if each_key == new_dict["position"]:
+                dict_position[each_key].append(new_dict)
+
     return dict_position
