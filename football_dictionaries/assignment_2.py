@@ -15,6 +15,7 @@ def players_by_position(squads_list):
     
     # Go through positions that are in the list 
     for position in position_set:
+        
         # Create a list of players for a certain position
         position_list = []
         print(type(position_dictionary))
