@@ -8,6 +8,7 @@ def players_as_dictionaries(squads_list):
         
         # Uses the zip on the key_list above and players
         dict_of_players_stats = dict(zip(key_tuple,players))
+        
         #dict_of_players_stats['number'] = players[0]
         #dict_of_players_stats['position'] = players[1]
         #dict_of_players_stats['name'] = players[2]
