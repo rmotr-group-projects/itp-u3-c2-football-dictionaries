@@ -53,7 +53,8 @@ def test_assignment_1():
 
 # Assignment 2
 def test_assignment_2():
-    result = players_by_position(SQUADS_DATA)
+    SQUADS_LIST = players_as_dictionaries(SQUADS_DATA)
+    result = players_by_position(SQUADS_LIST)
     assert len(result) == 3  # 3 positions
 
     goalkeepers = result['GK']
