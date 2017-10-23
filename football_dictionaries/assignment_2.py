@@ -173,7 +173,7 @@ def players_as_dictionaries(sq1):
     player_list = [ ]
 
     for i in range(len(sq1)):
-        result = zip(keys,sq1[i])
+        result = list(zip(keys,sq1[i]))
         player_dict = { }
         for i in range(len(result)):
             player_dict[result[i][0]] = result[i][1] 
@@ -210,7 +210,7 @@ def players_by_position(sq2):
     
     return all_pos_dict
 
-print(players_by_position(SQUADS_DATA))
+#print(players_by_position(SQUADS_DATA))
 
 
 
