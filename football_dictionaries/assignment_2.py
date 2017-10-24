@@ -10,15 +10,10 @@ def players_by_position(squads_list):
     for player in formatted_list:
         player_position = player.get('position')
         positions.append(player_position)
-
-    # sets default positions for positions list
-    for position in positions:
-        positions_list.setdefault(position, [])
-
-    # gets each position from players
-    for player in formatted_list:
-        player_position = player.get('position')
-        # if position matches, add the player to that group
+        # sets default positions for positions list
+        for position in positions:
+            positions_list.setdefault(position, [])
+        # if position matches, add the player to that group            
         for position in positions_list:
             if player_position == position:
                 positions_list[player_position].append(player)
