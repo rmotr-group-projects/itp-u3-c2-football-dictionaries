@@ -1,21 +1,19 @@
-from pprint import pprint
-
 def players_as_dictionaries(squads_list):
-    # labels 
+    # labels
     labels = [
-            'number',
-            'position',
-            'name',
-            'date_of_birth',
-            'caps',
-            'club',
-            'country',
-            'club_country',
-            'year'
+        'number',
+        'position',
+        'name',
+        'date_of_birth',
+        'caps',
+        'club',
+        'country',
+        'club_country',
+        'year'
     ]
     # will contain formatted list of dictionaries
     formatted_list = []
-    
+
     # returns a collection of dictionaries with labels as keys
     # and values set to None
     for member in squads_list:
