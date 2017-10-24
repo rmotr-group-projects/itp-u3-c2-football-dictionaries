@@ -1,12 +1,10 @@
 from football_dictionaries.assignment_1 import players_as_dictionaries
-from football_dictionaries.assignment_2 import players_by_position
 
 
 def players_by_country_and_position(squads_list):
     countries = {}
     # get results from previous assignments
     formatted_list = players_as_dictionaries(squads_list)
-    positions_list = players_by_position(squads_list)
 
     # iterate through the formatted list of players
     for player in formatted_list:
