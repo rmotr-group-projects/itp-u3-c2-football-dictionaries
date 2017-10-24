@@ -16,7 +16,7 @@ def players_as_dictionaries(squads_list):
 
     # returns a collection of dictionaries with labels as keys
     # and values set to None
-    for member in squads_list:
+    for player_info in squads_list:
         player = dict.fromkeys(labels)
         formatted_list.append(player)
 
