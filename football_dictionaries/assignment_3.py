@@ -1,4 +1,4 @@
-from squads_data import SQUADS_DATA
+from football_dictionaries.squads_data import SQUADS_DATA
 
 
 def player_list_to_dict(player_list):
