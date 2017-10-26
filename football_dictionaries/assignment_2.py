@@ -1,5 +1,4 @@
-from assignment_1 import players_as_dictionaries
-from squads_data import SQUADS_DATA
+from .assignment_1 import players_as_dictionaries
 
 def players_by_position(squads_list):
     player_position = {}
