@@ -1,5 +1,5 @@
 from pprint import pprint
-from squads_data import SQUADS_DATA
+#from squads_data import SQUADS_DATA
 
 def players_as_dictionaries(squads_list):
     list_key = ['number', 'position', 'name', 'date_of_birth', 'caps', 'club', 'country', 'club_country', 'year']
