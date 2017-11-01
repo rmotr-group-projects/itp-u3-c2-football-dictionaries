@@ -182,5 +182,5 @@ def players_by_country_and_position(arg1):
 #    return arg_dict
 
 
-pp = pprint.PrettyPrinter(depth=6)
-pp.pprint(players_by_country_and_position(SQUADS_DATA))
+#pp = pprint.PrettyPrinter(depth=6)
+#pp.pprint(players_by_country_and_position(SQUADS_DATA))
