@@ -1,5 +1,3 @@
-#from squads_data import SQUADS_DATA
-
 def players_as_dictionaries(squads_list):
     #iterate over input while creating generic dictionaries from set(keys_list) values
     #fill dict(squad) with the input from player in squads_list
