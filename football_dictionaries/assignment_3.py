@@ -1,4 +1,3 @@
-from squads_data import SQUADS_DATA
 from .assignment_2 import players_by_position
 
 
