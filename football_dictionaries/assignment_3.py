@@ -59,4 +59,4 @@ def players_by_country_and_position(squads_list):
     return expected_countries
         
 
-pprint(players_by_country_and_position(SQUADS_DATA))
+#pprint(players_by_country_and_position(SQUADS_DATA))

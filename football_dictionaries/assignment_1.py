@@ -1,4 +1,4 @@
-from squads_data import SQUADS_DATA
+#from football_dictionaries.squads_data import SQUADS_DATA
 
 # Transform 1 record of list to dictionary function
 def transform_dict(player):
