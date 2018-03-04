@@ -1,5 +1,5 @@
 # from squads_data import SQUADS_DATA
-from assignment_1 import players_as_dictionaries
+from football_dictionaries.assignment_1 import players_as_dictionaries
 
 def players_by_position(squads_list):
     # Reassign the list to new variable to be safe

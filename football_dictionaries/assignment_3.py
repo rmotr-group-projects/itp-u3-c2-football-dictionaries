@@ -1,5 +1,5 @@
 # from squads_data import SQUADS_DATA
-from assignment_1 import players_as_dictionaries
+from football_dictionaries.assignment_1 import players_as_dictionaries
 from pprint import pprint
 
 def players_by_country_and_position(squads_list):
