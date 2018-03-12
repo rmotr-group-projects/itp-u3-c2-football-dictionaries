@@ -173,37 +173,29 @@ def players_as_dictionaries(squads_list):
     new_temp={}
     return result
 
-result_dic = players_as_dictionaries(SQUADS_DATA)
-
-def players_by_position(squads_list):
-    result = {
-    "GK": [],
-    "DF": [],
-    "MF": [],
-    "FW": [],
-    }
-    for item in squads_list:
-        if item['position'] == "GK":
-            result["GK"].append(item)
-        elif item['position'] == "MF":
-            result["MF"].append(item)
-        elif item['position'] == "DF":
-            result['DF'].append(item)
-        elif item['position'] == "FW":
-            result['FW'].append(item)
-    return result
-result_pos = players_by_position(result_dic)
+# result_dic = players_as_dictionaries(SQUADS_DATA)
 
 def players_by_country_and_position(squads_list):
-    result = {}
-    for ele in squads_list:
-        country = ele['country']
-        position = ele['position']
-        result.setdefault(country,{})
-        result[country].setdefault(position,[])
-        result[country][position].append(ele)
+    squad = players_as_dictionaries(squads_list)
+    by_country = {}
 
+    for player in squad:
+        country = player['country']
+        position = player['position']
+        by_country.setdefault(country, {})
+        by_country[country].setdefault(position, [])
+        by_country[country][position].append(player)
 
+    return by_country
+  
+# def players_by_country_and_position(squads_list):
+#     result = {}
+#     for ele in squads_list:
+#         country = ele['country']
+#         position = ele['position']
+#         result.setdefault(country,{})
+#         result[country].setdefault(position,[])
+#         result[country][position].append(ele)
+#     return result
 
-    return result
-print(players_by_country_and_position(result_dic))
+# print(players_by_country_and_position(result_dic))
