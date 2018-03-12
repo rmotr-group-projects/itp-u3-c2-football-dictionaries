@@ -156,24 +156,42 @@ SQUADS_DATA = [
 ]
 
 def players_as_dictionaries(squads_list):
-    result = []
-    for list in squads_list:
-        new_temp = {
-        'number': list[0],
-        'position': list[1],
-        'name': list[2],
-        'date_of_birth': list[3],
-        'caps': list[4],
-        'club': list[5],
-        'country': list[6],
-        'club_country': list[7],
-        'year': list[8]
+    squad_as_dict = []
+    for player in squads_list:
+        player_dict = {
+            'number': player[0],
+            'position': player[1],
+            'name': player[2],
+            'date_of_birth': player[3],
+            'caps': player[4],
+            'club': player[5],
+            'country': player[6],
+            'club_country': player[7],
+            'year': player[8],
         }
-        result.append(new_temp)
-    new_temp={}
-    return result
+        squad_as_dict.append(player_dict)
+    return squad_as_dict
+  
+result_dic = players_as_dictionaries(SQUADS_DATA)
 
-# result_dic = players_as_dictionaries(SQUADS_DATA)
+def players_by_position(squads_list):
+    result = {
+    "GK": [],
+    "DF": [],
+    "MF": [],
+    "FW": [],
+    }
+    for item in squads_list:
+        if item['position'] == "GK":
+            result["GK"].append(item)
+        elif item['position'] == "MF":
+            result["MF"].append(item)
+        elif item['position'] == "DF":
+            result['DF'].append(item)
+        elif item['position'] == "FW":
+            result['FW'].append(item)
+    return result
+print(players_by_position(result_dic))
 
 def players_by_country_and_position(squads_list):
     squad = players_as_dictionaries(squads_list)
