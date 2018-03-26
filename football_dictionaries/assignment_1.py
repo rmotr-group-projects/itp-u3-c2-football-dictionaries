@@ -1,7 +1,8 @@
 from squads_data import SQUADS_DATA as squads_list
 
+new_squads_list = squads_list[:]
+
 def players_as_dictionaries(squads_list):
-    new_squads_list = squads_list[:]
     player_dict_format = []
     for player in new_squads_list:
         player_bio = {
