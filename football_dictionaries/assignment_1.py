@@ -1,2 +1,4 @@
 def players_as_dictionaries(squads_list):
-    pass
+    new_squads_list = squads_list[:]
+    print(squads_list)
+    
