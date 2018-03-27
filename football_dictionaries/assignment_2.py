@@ -2,6 +2,7 @@ from assignment_1 import players_as_dictionaries
 # from football_dictionaries.assignment_1 import players_as_dictionaries
 from squads_data import SQUADS_DATA
 # from football_dictionaries.squads_data import SQUADS_DATA
+from pprint import pprint
 
 def players_by_position(squads_list):
     players = players_as_dictionaries(squads_list)
@@ -25,4 +26,4 @@ def players_by_position(squads_list):
     return positions
             
 
-# print(players_by_position(SQUADS_DATA))
+# pprint(players_by_position(SQUADS_DATA))

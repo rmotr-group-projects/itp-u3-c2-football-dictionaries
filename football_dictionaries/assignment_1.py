@@ -1,6 +1,6 @@
-# from squads_data import SQUADS_DATA
-from football_dictionaries.squads_data import SQUADS_DATA
-
+from squads_data import SQUADS_DATA
+# from football_dictionaries.squads_data import SQUADS_DATA
+from pprint import pprint
 def players_as_dictionaries(squads_list):
     # squads_player_dict = {
     #     'number': None,
@@ -37,4 +37,4 @@ def players_as_dictionaries(squads_list):
     # print(players_list)
     return players_list
         
-players_as_dictionaries(SQUADS_DATA)
+# pprint(players_as_dictionaries(SQUADS_DATA))
