@@ -1,7 +1,7 @@
-from assignment_1 import players_as_dictionaries
-# from football_dictionaries.assignment_1 import players_as_dictionaries
-from squads_data import SQUADS_DATA
-# from football_dictionaries.squads_data import SQUADS_DATA
+# from assignment_1 import players_as_dictionaries
+from football_dictionaries.assignment_1 import players_as_dictionaries
+# from squads_data import SQUADS_DATA
+from football_dictionaries.squads_data import SQUADS_DATA
 from pprint import pprint
 
 def players_by_position(squads_list):
