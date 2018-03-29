@@ -1,3 +1,5 @@
+
+
 def players_as_dictionaries(squads_list):
     # Returns info of players of a squad into a dictionary
     overall_squad_bio = []
