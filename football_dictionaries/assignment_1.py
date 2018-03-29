@@ -20,5 +20,3 @@ def players_as_dictionaries(squads_list):
         combined_lists_dict = dict(zip(player_bio_info, player))
         overall_squad_bio.append(combined_lists_dict)
     return overall_squad_bio
-
-    

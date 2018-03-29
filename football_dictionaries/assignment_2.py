@@ -5,14 +5,7 @@ def players_by_position(squads_list):
     new_squads_list = players_as_dictionaries(squads_list)
     player_position_dict = {}
     for player in new_squads_list:
-        # Appends player dictionary to a new position dictionary
+        # Creates and appends player dictionary to position dictionary
         player_position_dict.setdefault(player['position'], [])
         player_position_dict[player['position']].append(player)
     return player_position_dict
-
-
-
-
-    
-    
-    

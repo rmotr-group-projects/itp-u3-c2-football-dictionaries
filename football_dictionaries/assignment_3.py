@@ -11,7 +11,8 @@ def players_by_country_and_position(squads_list):
     }
     for country in country_dict:
         player_position_dict = {}
-        for player in new_squads_list:       
+        for player in new_squads_list:
+            # If player country equals key, return value for dict
             if player['country'] == country:
                 player_position_dict.setdefault(player['position'], [])
                 player_position_dict[player['position']].append(player)
