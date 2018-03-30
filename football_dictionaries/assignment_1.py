@@ -1,4 +1,5 @@
 from .squads_data import SQUADS_DATA
+from pprint import pprint
 
 def players_as_dictionaries(squads_list):
     player_list = []
@@ -19,8 +20,8 @@ def players_as_dictionaries(squads_list):
 # print(players_as_dictionaries(SQUADS_DATA))
 
 squads_list = players_as_dictionaries(SQUADS_DATA)
-print(squads_list[0])
-print(len(squads_list))
+# pprint(squads_list[0])
+# print(len(squads_list))
 
 # {
 #         'caps': '',
