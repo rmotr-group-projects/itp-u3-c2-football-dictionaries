@@ -1,5 +1,4 @@
-from assignment_1 import players_as_dictionaries
-from squads_data import SQUADS_DATA
+from football_dictionaries.assignment_1 import players_as_dictionaries
 
 def players_by_position(squads_list):
     position_dict = {}  #dictionary with positions as keys and players that play those positions as values
@@ -9,4 +8,3 @@ def players_by_position(squads_list):
         position_dict[player['position']].append(player)  #appending player to the player's respective position key within position_dict
     return position_dict
 
-print(players_by_position(SQUADS_DATA))
