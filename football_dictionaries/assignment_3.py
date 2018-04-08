@@ -5,9 +5,9 @@ def players_by_country_and_position(squads_list):
     
     for player in players_as_dictionaries(squads_list):
  
-        result.setdefault(player['country'], [])
-        result.setdefault(player['position'], [])
-        result[player['country']['position']].append(player)
+        result.setdefault(player['country'], {})
+        result[player['country']].setdefault(player['position'], [])
+        result[player['country']][player['position']].append(player)
     
     return result
 
