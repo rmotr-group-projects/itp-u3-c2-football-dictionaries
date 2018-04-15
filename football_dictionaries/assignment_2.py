@@ -1,4 +1,4 @@
-from football_dictionaries.assignment_1 import players_by_dictionaries
+from football_dictionaries.assignment_1 import players_as_dictionaries
 
 def players_by_position(squads_list):
     
@@ -17,7 +17,7 @@ def players_by_position(squads_list):
     		if position in players:
     			positions.append(players)
 
-    	position_dict[position] = players_by_dictionaries(positions)
+    	position_dict[position] = players_as_dictionaries(positions)
 
     return position_dict
 
