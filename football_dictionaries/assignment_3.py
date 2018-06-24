@@ -1,5 +1,3 @@
-from squads_data import SQUADS_DATA
-from pprint import pprint
 def players_by_country_and_position(squads_data):
     player_dict_list = []
     playerlist=[]
@@ -93,5 +91,3 @@ def players_by_country_and_position(squads_data):
             }
         }
     return(big_dic)
-        
-pprint(players_by_country_and_position(SQUADS_DATA))
