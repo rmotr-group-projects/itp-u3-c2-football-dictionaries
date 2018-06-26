@@ -3,7 +3,6 @@
 # we need to use the player_to_dict function from assignment_1.py so we import just it
 from assignment_1 import player_to_dict
 from squads_data import SQUADS_DATA as squad;
-from pprint import pprint
 
 def players_by_position(squads_list):
     # create a dictionary which will house the different positions
@@ -19,9 +18,3 @@ def players_by_position(squads_list):
         # if the player's position matches the position in the existing dictionary, append it to the list
         positions[player_dict['position']].append(player_dict)
     return positions
-
-print (range(len(squad)))
-print (squad[0][1])
-print (squad[0])
-print (player_to_dict(squad[0]))
-print (player_to_dict(squad[0])['position'])
