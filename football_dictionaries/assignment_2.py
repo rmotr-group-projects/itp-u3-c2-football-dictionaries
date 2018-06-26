@@ -1,3 +1,5 @@
+#Caleb and Marcos
+
 # we need to use the player_to_dict function from assignment_1.py so we import just it
 from assignment_1 import player_to_dict
 from squads_data import SQUADS_DATA as squad;
