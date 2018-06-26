@@ -5,33 +5,15 @@
 #   "MF": [{..player1..}, {..player2..}],
 #   "FW": [{..player1..}, {..player2..}],
 # }
+from assignment_1 import players_as_dictionaries
 from squads_data import SQUADS_DATA
+import pprint
 def players_by_position(squads_list):
-    result = {
-        'GK' : [],
-        'DF' : [],
-        'MF' : [],
-        'FW' : []
-    }
+    result_dict = {}
     for player in squads_list:
-        temp_obj = {
-            'number'        : player[0],
-            'position'      : player[1],
-            'name'          : player[2],
-            'date_of_birth' : player[3],
-            'caps'          : player[4],
-            'club'          : player[-4],
-            'country'       : player[-3],
-            'club_country'  : player[-2],
-            'year'          : player[-1]
-        }
-        if temp_obj['position'] == 'GK':
-            result['GK'].append(temp_obj)
-        elif temp_obj['position'] == 'DF':
-            result['DF'].append(temp_obj)
-        elif temp_obj['position'] == 'MF':
-            result['MF'].append(temp_obj)
-        else:
-            result['FW'].append(temp_obj)
-    return result
-print(players_by_position(SQUADS_DATA))
+        result_dict.setdefault(player['position'], [])
+        result_dict[player['position']].append(player)
+    pprint.pprint(result_dict)
+    return result_dict
+        
+players_by_position(players_as_dictionaries(SQUADS_DATA))
