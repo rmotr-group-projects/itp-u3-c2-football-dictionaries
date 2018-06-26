@@ -1,4 +1,5 @@
-from pprint import pprint
+#Caleb and Marcos
+
 from squads_data import SQUADS_DATA as squad;
 from assignment_1 import players_as_dictionaries
 
