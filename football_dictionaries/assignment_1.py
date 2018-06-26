@@ -1,3 +1,5 @@
+#Caleb and Marcos
+
 from squads_data import SQUADS_DATA as squad;
 
 def players_as_dictionaries(squads_list):
