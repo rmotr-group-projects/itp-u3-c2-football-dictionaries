@@ -12,17 +12,14 @@
 #     "FW": [{..player1..}, {..player2..}],
 #   }
 # }
-from assignment_1 import players_as_dictionaries
-from squads_data import SQUADS_DATA
+from .assignment_1 import players_as_dictionaries
+from .squads_data import SQUADS_DATA
 from pprint import pprint 
 def players_by_country_and_position(squads_list):
     result = {}
-    pprint(squads_list)
-    for player in squads_list:
+    player_json = players_as_dictionaries(squads_list)
+    for player in player_json:
         result.setdefault(player['country'], {})
         result[player['country']].setdefault(player['position'], [])
         result[player['country']][player['position']].append(player)
-    pprint(result)
     return result
-players_by_country_and_position(players_as_dictionaries(SQUADS_DATA))
-        

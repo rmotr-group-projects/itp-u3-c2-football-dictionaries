@@ -1,5 +1,5 @@
-from squads_data import SQUADS_DATA
-
+# from football_dictionaries.squads_data import SQUADS_DATA
+# from pprint import pprint
 def players_as_dictionaries(squads_list):
     result = []
     for player in squads_list:
@@ -15,6 +15,3 @@ def players_as_dictionaries(squads_list):
             'year'          : player[-1]
         })
     return result
-#print(players_as_dictionaries(SQUADS_DATA))
-#print(players_as_dictionaries((squads_data)))
-#print(len(players_as_dictionaries(squads_data)))

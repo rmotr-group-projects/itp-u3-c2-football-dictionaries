@@ -1,4 +1,4 @@
-SQUADS_DATA = [
+SQUADS_DATA = [  
   [
     "1",
     "GK",
