@@ -13,8 +13,8 @@ def players_by_position(squads_list):
             'club_country': player[7],
             'year': player[8],
         }
-
         position = player_dict['position']
+
         by_position.setdefault(position, [])
         by_position[position].append(player_dict)
 

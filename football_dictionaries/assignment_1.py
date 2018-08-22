@@ -15,4 +15,5 @@ def players_as_dictionaries(squads_list):
         }
 
         player_list.append(player_dict)
+        
     return player_list
