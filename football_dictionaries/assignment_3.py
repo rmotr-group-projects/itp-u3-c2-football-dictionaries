@@ -1,5 +1,5 @@
 def players_by_country_and_position(squads_list):
-    grouped_dict = {}
+    grouped_dict = {} 
 
     for player in squads_list:
         number, position, name, date_of_birth, caps, club, country, club_country, year = player
