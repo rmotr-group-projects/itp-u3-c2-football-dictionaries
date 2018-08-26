@@ -2,8 +2,6 @@ from squads_data import SQUADS_DATA
 from pprint import pprint
 
 
-squadz = SQUADS_DATA
-
 def players_as_dictionaries(squads_list):
     result = []
     
@@ -35,7 +33,7 @@ def players_as_dictionaries(squads_list):
         result_dict['year'] = year
         
         
-        # set dict in list result
+        # set dict in list
         result.append(result_dict)
     
     return result
