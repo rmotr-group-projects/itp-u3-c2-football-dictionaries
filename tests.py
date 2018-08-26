@@ -1,5 +1,5 @@
 # Data
-from football_dictionaries.squads_data import SQUADS_DATA
+from football_dictionaries.squads_data import SQUADS_DATA as SQUADS_DATA
 
 # Assignment 1
 from football_dictionaries.assignment_1 import players_as_dictionaries
