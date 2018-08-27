@@ -1,5 +1,3 @@
-# PASSED warm_up assignment_3
-
 user1 = ['john','jj@jj.com', 21]
 user2 = ['pat', 'aw@jdj.com', 22]
 user3 = ['jill', 'jd@jj.com', 32]
@@ -31,9 +29,3 @@ def transform_multiple_users_to_dicts(multiple_users):
         result.append(users)
     
     return result
-  
-
-
-transform_multiple_users_to_dicts(all_users)
-
-    

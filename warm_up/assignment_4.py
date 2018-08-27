@@ -20,69 +20,48 @@ users = [{
         'name': 'Dustin',
         'email': 'dustin@hotmail.com',  # hotmail
         'age': 35
+    },{
+        'name': 'Jason',
+        'email': 'jason@rmotr.com',
+        'age': 61
     }]
     
     
 def group_users_by_email_domain(users):
     result = {}
     emails = []
+    #domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'rmotr.com']
+    
     
     for item in users:
         email = item['email']
         emails.append(email)
         
+        # need to make the if statements into one for loop for the domains
+        # update at a later date
+
         # @gmail.com
-        if '@gmail.com' in email:
-            gmail = '@gmail.com'
+        if 'gmail.com' in email:
+            gmail = 'gmail.com'
             email = gmail
             
         # @yahoo
-        if '@yahoo.com' in email:
-            yahoo = '@yahoo.com'
+        if 'yahoo.com' in email:
+            yahoo = 'yahoo.com'
             email = yahoo
             
         # @hotmail
-        if '@hotmail.com' in email:
-            hotmail = '@hotmail.com'
+        if 'hotmail.com' in email:
+            hotmail = 'hotmail.com'
             email = hotmail
+        
+        # @rmotr.com
+        if 'rmotr.com' in email:
+            rmotr = 'rmotr.com'
+            email = rmotr
+     
         
         result.setdefault(email, [])
         result[email].append(item)
-    
+        
     return(result)
-
-
-group_users_by_email_domain(users)
-    
-    
-    
-    
-# import itertools
-# from operator import itemgetter   
-    
-# users = [
-    
-#     {'name': 'john', 'domain': '@gmail.com'}, 
-#     {'name':'jane', 'domain': '@hotmail.com'}, 
-#     {'name': 'mary', 'domain': '@hotmail.com'}, 
-#     {'name':'dustin', 'domain': '@hotmail.com'}, 
-#     {'name':'rose', 'domain': '@yahoo.com'}, 
-#     {'name':'jason', 'domain': '@rmotr.com'}
-    
-#     ]
-
-# def group_users_by_email_domain(users):
-#   # users_grouped = grouped_users_by_email_domain(users)
-#     sorted_users = sorted(users, key=itemgetter('domain'))
-    
-#     for key, group in itertools.groupby(sorted_users, key=lambda x:x['domain']):
-#         print(sorted_users)
-    
-    
-    #domains = {
-        #'@gmail.com': @gmail.com,
-        #'@hotmail.com': @hotmail.com,
-        #'@yahoo.com':  @yahoo.com,
-        #'@rmotr.com': @rmotr.com,
-    #}
-# group_users_by_email_domain(users) 

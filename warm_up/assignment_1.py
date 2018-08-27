@@ -1,5 +1,3 @@
-# PASSED warm_up assignment_1
-
 def build_user_as_dict(name, email, age):
     users = {
         'name': name,
@@ -8,10 +6,3 @@ def build_user_as_dict(name, email, age):
     }
     
     return users
-
-
-#build_user_as_dict('john', 'smith@gmail.com', '27')
- 
-
-            
-

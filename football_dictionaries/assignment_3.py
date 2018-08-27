@@ -5,6 +5,8 @@ from pprint import pprint
 def players_by_country_and_position(squads_list):
     result = {}
     
+   # need to add the previous function (assignment_2) for below output
+   # will add to this at a later time
    
     for item in squads_list:
         result_dict = {}
@@ -25,7 +27,7 @@ def players_by_country_and_position(squads_list):
         result_dict['number'] = number
         result_dict['position'] = position
         result_dict['name'] = name
-        result_dict['dob'] = dob
+        result_dict['date_of_birth'] = dob
         result_dict['caps'] = caps
         result_dict['club'] = club
         result_dict['country'] = country
@@ -40,9 +42,3 @@ def players_by_country_and_position(squads_list):
         result[country][position].append(result_dict)
     
     return result
-
-# p_1 = players_by_country_and_position(SQUADS_DATA)
-# pprint(p_1['Argentina'])
-# print('-------------------------------')
-# pprint(p_1['Argentina']['FW'])
-

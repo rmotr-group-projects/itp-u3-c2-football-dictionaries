@@ -25,7 +25,7 @@ def players_as_dictionaries(squads_list):
         result_dict['number'] = number
         result_dict['position'] = position
         result_dict['name'] = name
-        result_dict['dob'] = dob
+        result_dict['date_of_birth'] = dob
         result_dict['caps'] = caps
         result_dict['club'] = club
         result_dict['country'] = country

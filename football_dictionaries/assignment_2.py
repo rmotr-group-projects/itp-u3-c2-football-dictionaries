@@ -3,9 +3,11 @@ from pprint import pprint
 
 
 def players_by_position(squads_list):
-
     result = {}
     
+    # need to add the previous function (assignment_2) for below output
+    # will add to this at a later time
+   
     for item in squads_list:
         result_dict = {}
         
@@ -25,7 +27,7 @@ def players_by_position(squads_list):
         result_dict['number'] = number
         result_dict['position'] = position
         result_dict['name'] = name
-        result_dict['dob'] = dob
+        result_dict['date_of_birth'] = dob
         result_dict['caps'] = caps
         result_dict['club'] = club
         result_dict['country'] = country
@@ -40,31 +42,3 @@ def players_by_position(squads_list):
     
     
     return result
-    
-# new_player = players_by_position(SQUADS_DATA)
-# new_goalkeeper = new_player['GK']
-# pprint(new_goalkeeper[0])
-
-
-
-# def players_by_position(squads_list):
-    
-#     players = {
-#         'GK': [],
-#         'MF': [],
-#         'FW': []
-    
-#     }
-
-#     for player_as_list in squads_list:
-#         player = transform_list_player_to_dict(player_as_list)
-#         position = player['position']
-        
-#         #players[position].append(player)
-        
-#         list_by_position = players.get(position)
-#         list_by_position.append(player)
-    
-#     return players
-        
-        
