@@ -1,34 +1,14 @@
-from pprint import pprint
+from .squads_data import SQUADS_DATA
+from .assignment_1 import players_as_dictionaries
 
-def create_player_dictionary(player):
+def players_by_position(SQUADS_DATA):
     
-    return {
-        'number': player[0],
-        'position': player[1],
-        'name': player[2],
-        'date_of_birth': player[3],
-        'caps': player[4],
-        'club': player[5],
-        'country': player[6],
-        'club_country': player[7],
-        'year': player[8],
-    }
-    
-def players_by_position(squads_list):
-    
-    dictionary_of_players = {}
-    list_of_players = []
+    squads_list = players_as_dictionaries(SQUADS_DATA)
+    dictionary_of_player_pos = {}
     
     for player in squads_list:
         
-        player_dict = create_player_dictionary(player)
-        list_of_players.append(player_dict)
+        dictionary_of_player_pos.setdefault(player["position"], [])
+        dictionary_of_player_pos[player["position"]].append(player)
         
-    
-    for i in range(0, len(list_of_players)):
-        
-        dictionary_of_players.setdefault(list_of_players[i]["position"], [])
-        
-        dictionary_of_players[list_of_players[i]["position"]].append(list_of_players[i])
-        
-    return dictionary_of_players
+    return dictionary_of_player_pos
