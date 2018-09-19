@@ -9,7 +9,7 @@ def players_as_dictionaries(squads_list):
     for item in squads_list:
         result_dict = {}
         
-        # assign var to squadlist values
+        # assign var to squadlist valuess
         number = item[0]
         position = item[1]
         name = item[2]
