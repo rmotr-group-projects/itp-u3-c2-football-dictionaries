@@ -1,5 +1,5 @@
 import csv
-
+from pprint import pprint
 
 def read_squad_file(file_name='squads.csv'):
     squad = []

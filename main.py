@@ -5,3 +5,4 @@ from pprint import pprint
 
 result = players_as_dictionaries(SQUADS_DATA)
 pprint(result)
+
