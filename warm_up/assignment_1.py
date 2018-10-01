@@ -1,2 +1,10 @@
 def build_user_as_dict(name, email, age):
-    pass
+    user = {
+        "name": name,
+        "email": email,
+        "age": age
+        }
+        
+    return user
+    
+    
