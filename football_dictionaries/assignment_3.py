@@ -90,6 +90,8 @@ def players_by_country_and_position(squads_list):
         if (player['country'] == player_ctry['country']) and (player['position'] == position):
           
           inner_dict_of_pos[position].append(player)
+      
+      #If-statement to delete a position in a country if it contains no player (empty)
       if inner_dict_of_pos[position] == []:
         del inner_dict_of_pos[position]
     
