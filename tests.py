@@ -13,7 +13,6 @@ from football_dictionaries.assignment_3 import players_by_country_and_position
 def test_assignment_1():
     result = players_as_dictionaries(SQUADS_DATA)
     assert len(result) == 14
-
     assert result[0] == {
         'caps': '',
         'club': 'Quilmes',
@@ -49,6 +48,7 @@ def test_assignment_1():
         'position': 'FW',
         'year': '2014'
     }
+    print('Test 1 passed')
 
 
 # Assignment 2
