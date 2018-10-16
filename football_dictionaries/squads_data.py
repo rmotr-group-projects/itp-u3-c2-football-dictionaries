@@ -132,15 +132,15 @@ SQUADS_DATA = [
     "2014"
   ],
   [
-    "-",
-    "FW",
-    "Koo Ja-Cheol",
-    "(1989-02-27)27 February 1989 (aged 25)",
-    "35",
-    "Mainz 05",
-    "South Korea",
-    "Germany",
-    "2014"
+    "-", # 0
+    "FW", # 1
+    "Koo Ja-Cheol", # 2
+    "(1989-02-27)27 February 1989 (aged 25)", # 3
+    "35", # 4
+    "Mainz 05", # 5
+    "South Korea", # 6
+    "Germany", # 7
+    "2014" # 8
   ],
   [
     "-",
