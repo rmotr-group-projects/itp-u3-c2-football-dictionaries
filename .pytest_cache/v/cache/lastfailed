@@ -1,3 +1,5 @@
 {
-  "tests.py": true
+  "tests.py::test_assignment_1": true,
+  "tests.py::test_assignment_2": true,
+  "tests.py::test_assignment_3": true
 }

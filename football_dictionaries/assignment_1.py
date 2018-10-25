@@ -21,3 +21,5 @@ def players_as_dictionaries(squads_list):
     
     return list_of_players
     
+# I finished the project!
+    
