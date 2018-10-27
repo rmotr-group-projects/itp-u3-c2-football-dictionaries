@@ -2,10 +2,13 @@ from football_dictionaries.assignment_1 import players_as_dictionaries
 
 def players_by_position(squads_list):
     player_dict_list = players_as_dictionaries(squads_list)
+    position_list = ['GK', 'FW', 'MF']
     res = {}
-    res.setdefault('GK', [])
-    res.setdefault('MF', [])
-    res.setdefault('FW', [])
+    for position in position_list:
+        res.setdefault(position, [])
+    # res.setdefault('GK', [])
+    # res.setdefault('MF', [])
+    # res.setdefault('FW', [])
     for player in player_dict_list:
         if player['position'] == 'GK':
             res['GK'].append(player)
