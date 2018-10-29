@@ -1,8 +1,4 @@
 
-from pprint import pprint 
-
-from football_dictionaries.squads_data import SQUADS_DATA
-
 def player_list_to_dict(list_of_player):
     player_dictionaries = {
         'caps': list_of_player[4],
@@ -21,8 +17,7 @@ def players_by_position(squads_list):
     playersByPosition = {
         "GK": [],
         "MF": [],
-        "FW": [],
-        "DF": []
+        "FW": []
     }
     for player_list in squads_list:
         player_dict = player_list_to_dict(player_list)
@@ -34,27 +29,20 @@ def players_by_country_and_position(squads_list):
     playersByCountryPosition = {
         'Argentina': {
             "GK": [],
-            "MF": [],
-            "FW": [],
-            "DF": []
+            "FW": []
         }, 
         'Belgium': {
             "GK": [],
             "MF": [],
-            "FW": [],
-            "DF": []
+            "FW": []
         }, 
         'Brazil': {
-            "GK": [],
-            "MF": [],
-            "FW": [],
-            "DF": []
+            "MF": []
         }, 
         'South Korea': {
             "GK": [],
             "MF": [],
-            "FW": [],
-            "DF": []
+            "FW": []
         }
     }
     for player_list in squads_list:
@@ -64,4 +52,3 @@ def players_by_country_and_position(squads_list):
         playersByCountryPosition[player_country][player_position].append(player_dict)
     return playersByCountryPosition
 
-pprint(players_by_country_and_position(SQUADS_DATA))

@@ -1,6 +1,3 @@
-from pprint import pprint 
-
-from football_dictionaries.squads_data import SQUADS_DATA
 
 def player_list_to_dict(list_of_player):
     player_dictionaries = {
@@ -17,19 +14,19 @@ def player_list_to_dict(list_of_player):
     return player_dictionaries
 
 def players_by_position(squads_list):
-    players = {
+    playersByPosition = {
         "GK": [],
         "MF": [],
-        "FW": []
+        "FW": [],
+       
     }
     for player_list in squads_list:
-        player = player_list_to_dict(player_list)
-        position = player['position']
-        
-          
-        players[position].append(player)
+        player_dict = player_list_to_dict(player_list)
+        player_position = player_dict['position']
+        playersByPosition[player_position].append(player_dict)
+    return playersByPosition
       
     
     return players
 
-pprint(players_by_position(SQUADS_DATA))
+
