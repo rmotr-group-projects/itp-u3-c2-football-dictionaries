@@ -1,3 +1,7 @@
+from pprint import pprint 
+
+from football_dictionaries.squads_data import SQUADS_DATA
+
 def player_list_to_dict(list_of_player):
     player_dictionaries = {
         'caps': list_of_player[4],
@@ -28,3 +32,4 @@ def players_by_position(squads_list):
     
     return players
 
+pprint(players_by_position(SQUADS_DATA))

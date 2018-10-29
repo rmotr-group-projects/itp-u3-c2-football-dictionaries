@@ -1,4 +1,6 @@
 
+from pprint import pprint 
+
 from football_dictionaries.squads_data import SQUADS_DATA
 
 def player_list_to_dict(list_of_player):
@@ -16,29 +18,50 @@ def player_list_to_dict(list_of_player):
     return player_dictionaries
 
 def players_by_position(squads_list):
-    players = {
+    playersByPosition = {
         "GK": [],
         "MF": [],
-        "FW": []
+        "FW": [],
+        "DF": []
     }
     for player_list in squads_list:
-        player = player_list_to_dict(player_list)
-        position = player['position']
-        players[position].append(player)
-    return players
+        player_dict = player_list_to_dict(player_list)
+        player_position = player_dict['position']
+        playersByPosition[player_position].append(player_dict)
+    return playersByPosition
 
 def players_by_country_and_position(squads_list):
-    players = {
-        'Argentina': [], 
-        'Belgium': [], 
-        'Brazil': [], 
-        'South Korea': []
+    playersByCountryPosition = {
+        'Argentina': {
+            "GK": [],
+            "MF": [],
+            "FW": [],
+            "DF": []
+        }, 
+        'Belgium': {
+            "GK": [],
+            "MF": [],
+            "FW": [],
+            "DF": []
+        }, 
+        'Brazil': {
+            "GK": [],
+            "MF": [],
+            "FW": [],
+            "DF": []
+        }, 
+        'South Korea': {
+            "GK": [],
+            "MF": [],
+            "FW": [],
+            "DF": []
+        }
     }
     for player_list in squads_list:
-        player = player_by_position(squads_list)
-        country = player['country']
-        players[country].append(player)
-    
-    return players
+        player_dict = player_list_to_dict(player_list)
+        player_position = player_dict['position']
+        player_country = player_dict['country']
+        playersByCountryPosition[player_country][player_position].append(player_dict)
+    return playersByCountryPosition
 
-print(players_by_position(SQUADS_DATA))
+pprint(players_by_country_and_position(SQUADS_DATA))
