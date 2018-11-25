@@ -1,2 +1,20 @@
+
 def players_as_dictionaries(squads_list):
-    pass
+    player_list = []
+    dict_player = {}
+    for player in squads_list:
+        dict_player = {
+        'number': player[0],
+        'position': player[1],
+        'name': player[2],
+        'date_of_birth': player[3],
+        'caps': player[4],
+        'club': player[5],
+        'country': player[6],
+        'club_country': player[7],
+        'year': player[8]
+        }
+        player_list.append(dict_player)
+    return player_list
+
+
