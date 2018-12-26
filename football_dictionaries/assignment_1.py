@@ -1,3 +1,7 @@
+from football_dictionaries.squads_data import SQUADS_DATA
+from pprint import pprint
+
+
 def players_as_dictionaries(squads_list):
     final_list = []
     for player in squads_list:
@@ -13,3 +17,17 @@ def players_as_dictionaries(squads_list):
         player_dict['year'] = player[8]
         final_list.append(player_dict)
     return final_list
+
+'''
+i = 0
+for s in SQUADS_DATA:
+    l = len(s)
+    j = 0
+    while j < l:
+        pprint(s[j])
+        j += 1
+    i += 1
+    if i > 0:
+        break
+'''
+pprint(players_as_dictionaries(SQUADS_DATA))
