@@ -1,4 +1,5 @@
-from squads_data import SQUADS_DATA
+from football_dictionaries.squads_data import SQUADS_DATA
+
 
 def players_as_dictionaries(squads_list):
     result=[]
@@ -9,6 +10,3 @@ def players_as_dictionaries(squads_list):
         result.append(dictionary)
     return result
 # print(players_as_dictionaries(SQUADS_DATA))
-
-
-

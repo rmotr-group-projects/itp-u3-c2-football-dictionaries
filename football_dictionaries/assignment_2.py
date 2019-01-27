@@ -1,6 +1,5 @@
-# Assignment 1
-from squads_data import SQUADS_DATA
-from assignment_1 import players_as_dictionaries
+from football_dictionaries.squads_data import SQUADS_DATA
+from football_dictionaries.assignment_1 import players_as_dictionaries
 
 def players_by_position(squads_list):
     squash_dict = players_as_dictionaries(squads_list)
@@ -11,11 +10,10 @@ def players_by_position(squads_list):
         position = dict_['position']
         result.setdefault(position, [])
         result[position].append(dict_)
-        
-        
-        
-    
     return result
 
 
-print(players_by_position(SQUADS_DATA))
+
+
+
+# print(players_by_position(SQUADS_DATA))
