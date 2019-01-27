@@ -8,7 +8,7 @@ def players_as_dictionaries(squads_list):
         dictionary = dict(zip(list_names, a_list))
         result.append(dictionary)
     return result
-print(players_as_dictionaries(SQUADS_DATA))
+# print(players_as_dictionaries(SQUADS_DATA))
 
 
 
