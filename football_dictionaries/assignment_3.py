@@ -1,5 +1,6 @@
-    from football_dictionaries.assignment_3 import players_by_country_and_position
-    def players_as_dictionaries(squads_list):
+from football_dictionaries.assignment_1 import players_as_dictionaries
+'''
+def players_as_dictionaries(squads_list):
     users = []
     for user in squads_list:
         user_dict = {
@@ -15,6 +16,7 @@
         }
         users.append(user_dict)
     return users
+'''
 
 def players_by_country_and_position(squads_list):
     country_position_dict = {}

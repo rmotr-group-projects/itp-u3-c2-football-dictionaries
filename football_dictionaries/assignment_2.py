@@ -1,6 +1,6 @@
-    from football_dictionaries.assignment_2 import players_by_position
-
-    def players_as_dictionaries(squads_list):
+from football_dictionaries.assignment_1 import players_as_dictionaries
+'''
+def players_as_dictionaries(squads_list):
     users = []
     for user in squads_list:
         user_dict = {
@@ -16,7 +16,7 @@
         }
         users.append(user_dict)
     return users
-
+'''
 def players_by_position(squads_list):
     #create empty dictionary
     position_dict = {}

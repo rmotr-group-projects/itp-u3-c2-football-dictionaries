@@ -1,10 +1,10 @@
-from football_dictionaries.assignment_1 import players_as_dictionaries
+#from football_dictionaries.assignment_1 import players_as_dictionaries
 
-    def players_as_dictionaries(squads_list):
+def players_as_dictionaries(squads_list):
     pass
 
     users = []
-        for user in squads_list:
+    for user in squads_list:
         user_dict = {
             'number': user[0],
             'position': user[1],
