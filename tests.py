@@ -1,3 +1,8 @@
+import pytest
+
+def pytest_collectreport(report):
+    if report.failed:
+        raise pytest.UsageError("Errors during collection, aborting")
 # Data
 from football_dictionaries.squads_data import SQUADS_DATA
 
