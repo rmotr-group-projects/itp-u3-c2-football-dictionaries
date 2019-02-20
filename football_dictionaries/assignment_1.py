@@ -12,7 +12,7 @@ def read_squad_file(file_name='test_data.csv'):
 
 squad = read_squad_file(file_name='test_data.csv')
 
-def players_as_dictionaries(squad):
+def players_as_dictionaries(players):
     retArr=[]
     for player in players:
             retArr.append({
@@ -26,4 +26,6 @@ def players_as_dictionaries(squad):
             'club_country': player[7],
             'year': player[8],
             })
-    print(retArr)
+    return retArr
+
+return players_as_dictionaries(squad)
