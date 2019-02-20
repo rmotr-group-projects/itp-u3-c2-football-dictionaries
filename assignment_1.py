@@ -26,4 +26,4 @@ def players_as_dictionaries(squad):
             'club_country': player[7],
             'year': player[8],
             })
-    print(retArr)
+    return retArr
