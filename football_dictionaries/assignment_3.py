@@ -1,17 +1,3 @@
-import csv
-import os
-
-def read_squad_file(file_name='test_data.csv'):
-    squad = []
-    with open(file_name) as fp:
-        reader = csv.reader(fp)
-        for line in reader:
-            squad.append(line)
-
-    return squad
-
-squad = read_squad_file(file_name='test_data.csv')
-
 def players_as_dictionaries(players):
     retArr=[]
     for player in players:
@@ -28,24 +14,16 @@ def players_as_dictionaries(players):
             })
     return retArr
 
-squad_data_test = players_as_dictionaries(squad)
-
 
 def players_by_country_and_position(squad_data):
+    squad = players_as_dictionaries(squad_data)
     posArr = {'GK':[], 'FW':[], 'DF':[], 'MF':[]}
     arr = {}
-    for person in squad_data:
-        if person['country'] not in arr:
-            arr[person['country']]=posArr
-        if person['position']=='GK':
-            arr[person['country']]['GK'].append(person)
-        elif person['position']=='FW':
-            arr[person['country']]['FW'].append(person)
-        elif person['position']=='DF':
-            arr[person['country']]['DF'].append(person)
-        elif person['position']=='MF':
-            arr[person['country']]['MF'].append(person)    
+    for person in squad:
+        if person['country'] not in arr.keys():
+            arr[person['country']]={}
+        if person['position'] not in arr[person['country']].keys():
+            arr[person['country']][person['position']] = [person]
+        else:
+            arr[person['country']][person['position']].append(person)
     return arr
-
-players_by_pos_and_country = players_by_country_and_position(squad_data_test)
-print(players_by_pos_and_country)
