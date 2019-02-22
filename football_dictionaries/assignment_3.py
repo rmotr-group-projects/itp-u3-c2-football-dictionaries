@@ -17,7 +17,6 @@ def players_as_dictionaries(players):
 
 def players_by_country_and_position(squad_data):
     squad = players_as_dictionaries(squad_data)
-    posArr = {'GK':[], 'FW':[], 'DF':[], 'MF':[]}
     arr = {}
     for person in squad:
         if person['country'] not in arr.keys():
