@@ -1,17 +1,3 @@
-import csv
-import os
-
-def read_squad_file(file_name='test_data.csv'):
-    squad = []
-    with open(file_name) as fp:
-        reader = csv.reader(fp)
-        for line in reader:
-            squad.append(line)
-
-    return squad
-
-squad = read_squad_file(file_name='test_data.csv')
-
 def players_as_dictionaries(players):
     retArr=[]
     for player in players:
@@ -27,5 +13,3 @@ def players_as_dictionaries(players):
             'year': player[8],
             })
     return retArr
-
-return players_as_dictionaries(squad)
