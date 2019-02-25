@@ -14,10 +14,3 @@ def players_by_position(squads_list):
     
     
     
-    
-'''
-result = {
-    'position':[{list_of_players}
-    ]
-}
-'''
