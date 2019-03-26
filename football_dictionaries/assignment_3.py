@@ -13,24 +13,3 @@ def players_by_country_and_position(squads_list):
         result[country][position].append(player)
         
     return result
-
-#     result={
-#         'Argentina' : [],
-#         'Belgium' : [],
-#         'Brazil' : [],
-#         'South Korea' : []
-#     }
-
-#     for position in pos_dic:
-#         for i in range(len(position)):
-#             if pos_dic[position][i]['country']=='Argentina':
-#                 result['Argentina'].append({position: pos_dic[position]})
-#             if pos_dic[position][i]['country']=='Belgium':
-#                 result['Belgium'].append({position: pos_dic[position]})
-#             if pos_dic[position][i]['country']=='Brazil':
-#                 result['Brazil'].append({position: pos_dic[position]})
-#             if pos_dic[position][i]['country']=='South Korea':
-#                 result['South Korea'].append({position: pos_dic[position]})
-
-    return result
-        

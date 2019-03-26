@@ -13,6 +13,7 @@ def players_as_dictionaries(squads_list):
             'year' : player[8]
         }
         result.append(p_dic)
+        
     return result
         
     
