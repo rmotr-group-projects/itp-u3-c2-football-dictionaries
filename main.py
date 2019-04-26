@@ -5,3 +5,16 @@ from pprint import pprint
 
 result = players_as_dictionaries(SQUADS_DATA)
 pprint(result)
+
+
+'''
+result = [
+[player1],
+[player2]
+]
+
+new_list = [
+{player1},
+{player2}
+]
+'''
