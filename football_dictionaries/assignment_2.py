@@ -1,4 +1,4 @@
-from assignment_1 import players_as_dictionaries
+from .assignment_1 import players_as_dictionaries
 from .squads_data import SQUADS_DATA
 from pprint import pprint
 
