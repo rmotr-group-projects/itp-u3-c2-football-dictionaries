@@ -1,6 +1,6 @@
 from assignment_1 import players_as_dictionaries
 from assignment_2 import players_by_position
-from squads_data import SQUADS_DATA
+from .squads_data import SQUADS_DATA
 from pprint import pprint
 
 def players_by_country_and_position(squads_list):
