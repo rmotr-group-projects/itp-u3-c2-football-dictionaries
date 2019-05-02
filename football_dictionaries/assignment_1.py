@@ -1,21 +1,17 @@
-squad_keys = ['number', 'position', 'name', 'date_of_birth', 'caps', 'club', 'country', 'club_country', 'year']
 
-def item_to_dict(data):
-    counter = 0    
-    squad_dict = {}
-    for item in data: 
-        number_value = item
-        squad_dict.setdefault(squad_keys[counter], number_value)
-        counter += 1
-    return(squad_dict)
-    
 def players_as_dictionaries(squads_list):
     final_list = []
     for item in squads_list:
-        temp_data = item
-        single_dict = item_to_dict(temp_data)
-        final_list.append(single_dict)
+        player = {}
+        player['number'] = item[0]
+        player['position'] = item[1]
+        player['name'] = item[2]
+        player['date_of_birth'] = item[3]
+        player['caps'] = item[4]
+        player['club'] = item[5]
+        player['country'] = item[6]
+        player['club_country'] = item[7]
+        player['year'] = item[8]
+        final_list.append(player)
 
     return final_list
-
-

@@ -1,4 +1,3 @@
-from pprint import pprint
 from football_dictionaries.assignment_1 import players_as_dictionaries
 
 def players_by_position(result):
@@ -9,6 +8,3 @@ def players_by_position(result):
         final_answer.setdefault(position_key, [])
         final_answer[position_key].append(item)
     return final_answer
-
-
-
