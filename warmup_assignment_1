@@ -1,0 +1,6 @@
+def build_user_as_dict(name, email, age):
+    new_dict = {}
+    new_dict['name'] = name
+    new_dict['email'] = email
+    new_dict['age'] = age
+    return new_dict
