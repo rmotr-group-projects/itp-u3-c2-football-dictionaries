@@ -1,0 +1,11 @@
+def transform_multiple_users_to_dicts(multiple_users):
+    result = []
+    for person in multiple_users:
+        new_dict = {
+            'name': person[0],
+            'email': person[1],
+            'age': person[2]
+        }
+        result.append(new_dict)
+    
+    return result
