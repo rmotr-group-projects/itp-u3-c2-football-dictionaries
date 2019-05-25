@@ -1,9 +1,8 @@
-from squads_data import SQUADS_DATA
-
 def players_by_position(squads_list):
     players_as_dicts = {}
     for player in squads_list:
-        if players_as_dicts and player[1] not in players_as_dicts:
+        #if players_as_dicts:
+        if player[1] not in players_as_dicts:
             players_as_dicts[player[1]] = [
                 {
                 'number': player[0],
@@ -33,4 +32,3 @@ def players_by_position(squads_list):
             )
     return players_as_dicts
 
-players_by_position(SQUADS_DATA)
