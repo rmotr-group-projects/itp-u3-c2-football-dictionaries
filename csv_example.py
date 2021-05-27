@@ -9,3 +9,5 @@ def read_squad_file(file_name='squads.csv'):
             squad.append(line)
 
     return squad
+
+#print(read_squad_file(file_name='squads.csv'))
