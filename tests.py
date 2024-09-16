@@ -13,7 +13,7 @@ from football_dictionaries.assignment_3 import players_by_country_and_position
 def test_assignment_1():
     result = players_as_dictionaries(SQUADS_DATA)
     assert len(result) == 14
-
+    
     assert result[0] == {
         'caps': '',
         'club': 'Quilmes',
@@ -25,7 +25,7 @@ def test_assignment_1():
         'position': 'GK',
         'year': '1930'
     }
-
+    
     assert result[1] == {
         'caps': '',
         'club': 'Boca Juniors',
@@ -37,7 +37,7 @@ def test_assignment_1():
         'position': 'FW',
         'year': '1930'
     }
-
+    
     assert result[-1] == {
         'caps': '26',
         'club': 'Ulsan Hyundai',
@@ -49,7 +49,7 @@ def test_assignment_1():
         'position': 'FW',
         'year': '2014'
     }
-
+    
 
 # Assignment 2
 def test_assignment_2():
