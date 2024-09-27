@@ -1,0 +1,8 @@
+def group_users_by_email_domain(multiple_users):
+    result = {}
+    for person in multiple_users:
+        email = person['email'].split('@')[1]
+        result.setdefault(email,[])
+        result[email].append(person)
+        
+    return result
